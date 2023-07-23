@@ -36,7 +36,7 @@ http://127.0.0.1:8080
 ## Comment lancer tous les tests en local avec Jest ?
 
 ```
-$ npm run test
+npm run test
 ```
 
 ## Comment lancer un seul test ?
