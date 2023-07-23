@@ -1,94 +1,57 @@
-
-## L'architecture du projet :
+L'architecture du projet :
 Ce projet, dit frontend, est connecté à un service API backend que vous devez aussi lancer en local.
 
 Le projet backend se trouve ici: https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back
 
-## Organiser son espace de travail :
+Organiser son espace de travail :
 Pour une bonne organization, vous pouvez créer un dossier bill-app dans lequel vous allez cloner le projet backend et par la suite, le projet frontend:
 
-Clonez le projet backend dans le dossier bill-app :
-```
-$ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back.git
-```
+Installation du projet
 
-```
-bill-app/
-   - Billed-app-FR-Back
-```
+Cloner le repository :
 
-Clonez le projet frontend dans le dossier bill-app :
-```
-$ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Front.git
-```
+git clone https://github.com/Zicaa/Billed-app.git```
 
-```
-bill-app/
-   - Billed-app-FR-Back
-   - Billed-app-FR-Front
-```
+Lancer le backend :
 
-## Comment lancer l'application en local ?
+cd Billed-app-FR-Back
+npm install
+npm start
 
-### étape 1 - Lancer le backend :
+L'API du backend est accessible en local via l'URL :
 
-Suivez les indications dans le README du projet backend.
+http://localhost:5678
 
-### étape 2 - Lancer le frontend :
+Lancer le frontend :
 
-Allez au repo cloné :
-```
-$ cd Billed-app-FR-Front
-```
+cd Billed-app-FR-Front
+npm install
+npm install -g live-server
+npm start
 
-Installez les packages npm (décrits dans `package.json`) :
-```
-$ npm install
-```
-
-Installez live-server pour lancer un serveur local :
-```
-$ npm install -g live-server
-```
-
-Lancez l'application :
-```
-$ live-server
-```
-
-Puis allez à l'adresse : `http://127.0.0.1:8080/`
+Le site est accessible en local via l'URL :
+http://127.0.0.1:8080
 
 
-## Comment lancer tous les tests en local avec Jest ?
+Lancer tous les tests en local avec Jest :
+npm run test
 
-```
-$ npm run test
-```
+Lancer un seul test :
+Installation de jest-cli :
 
-## Comment lancer un seul test ?
+npm i -g jest-cli
+jest src/__tests__/your_test_file.js
 
-Installez jest-cli :
+Voir la couverture de test : 
+http://127.0.0.1:8080/coverage/lcov-report/
 
-```
-$npm i -g jest-cli
-$jest src/__tests__/your_test_file.js
-```
-
-## Comment voir la couverture de test ?
-
-`http://127.0.0.1:8080/coverage/lcov-report/`
-
-## Comptes et utilisateurs :
-
+Comptes et utilisateurs :
 Vous pouvez vous connecter en utilisant les comptes:
 
-### administrateur : 
-```
+administrateur :
 utilisateur : admin@test.tld 
 mot de passe : admin
-```
-### employé :
-```
+
+employé :
 utilisateur : employee@test.tld
 mot de passe : employee
-```
